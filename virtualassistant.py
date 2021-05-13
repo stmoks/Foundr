@@ -1,51 +1,89 @@
 # Creating a virtual assitant similar to Siri and Alexa using Python
 # code copied from https://www.youtube.com/watch?v=AGatX_8gaeM
 
+# PyAudio is a requirement for using the speech recognition module. The instructions are presented on
+# the PyPi page for SpeechRecognition. I've also added the installation file in the requirements file.
+
 import speech_recognition as sr, os, datetime, warnings, random, calendar,wikipedia
+import pyttsx3
 from gtts import gTTS
 
-#ignore warning messages
 def RecordAudio():
-
-    #Record the audio
+    """
+    Function used to record audio from the PC mic. Returns text data.
+    """
+    # Record the audio  
     r = sr.Recognizer()
 
     with sr.Microphone() as source:
         print("Hello")
         audio = r.listen(source)
 
-    #Use Google's speech recognition
+    # Use Google's speech recognition
     data = r.recognize_google(audio)
     print(f"You said: {data}")
 
     return data
 
-RecordAudio()
 
-# #Get an assistant's response
-def AssistantResponse(text):
+# Get an assistant's response
+#todo potential to use the power of Google to have a conversation with someone
+# def AssistantResponse(text):
 
-    print(text)
+#     print(text)
 
-    #Convert the text to speech
-    response = gTTS(text =text,lang = "en", slow = False)
+#     # Convert the text to speech
+#     response = gTTS(text =text,lang = "en", slow = False)
 
-    #Save the converted audio to a file
-    response.save("response.mp3")
+#     # Save the converted audio to a file
+#     response.save("response.mp3")
 
-    #Play the audio file
-    os.system('start response.mp3')
+#     # Play the audio file
+#     #os.system('start response.mp3')
 
-text = "Pour some Sugar on me, yeah yeah yeah"
-AssistantResponse(text)
+text = RecordAudio()
+# AssistantResponse(text)
 
-#A function for wake words
+
+
+convertor = pyttsx3.init()
+convertor.setProperty('rate',150)
+convertor.setProperty('volume',0.7)
+voices = convertor.getProperty('voices')
+for x in voices:
+    print(x)
+voice_id = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0"
+convertor.setProperty('voice',voice_id)
+convertor.say(text)
+
+convertor.runAndWait()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# A function for wake words
 def Wakeword(text):
     WAKE_WORDS = ["hey computer"]
 
     text = text.lower()
 
-    #check to see if the user's commands contains a wake word
+    # Check to see if the user's commands contains a wake word
     for phrase in WAKE_WORDS:
         if phrase in text:
             return True
