@@ -6,13 +6,13 @@ Anyone that uses Foundr would be considered a user whether they invest or not. T
     - user id
     - email
     - password
-    - credential id
+    - credential id (weird hash thing)
     - playlist/bookmark
     - name
     - surname
     - country
-    - investment count
-    - artist profile
+    - portfolio id
+
 
 ## Payment
     - user id
@@ -27,5 +27,10 @@ Anyone that uses Foundr would be considered a user whether they invest or not. T
 ## Libary
     - user id
     - song id
+
+## Portfolio
+    - portfolio id
+    - funds
+    - investment count
     
 

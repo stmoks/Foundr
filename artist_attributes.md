@@ -12,6 +12,8 @@ of Foundr.
 ## Artist
     - id
     - name
+    - gender
+    - DOB
     - location
     - prospectus (summary or intro video)
     - country
@@ -20,7 +22,7 @@ of Foundr.
     - instruments
     - followers
     - following
-    - playlist
+    - playlist/bookmark
     - investors
     - social media accounts / websites
     - cover picture
@@ -29,7 +31,8 @@ of Foundr.
     - share price
     - email
     - password
-    - sponsors
+    - sponsors/endorsements
+    - portfolio id
 
 ## Album
     - artist id
@@ -53,18 +56,30 @@ of Foundr.
     - lyrics
     - track
     - track id 
-    - play count
+    - play/listen count
     - rating
     - comments
 
-## Indicators
+## Market indicators
     - artist id
     - year started
     - followers
     - investors
 
+## Events
+    - artist id
+    - event id
+    - description
+    - location
+    - cover image
+    - social media
+    - link
+
 ## General media container
     - artist id
     - media item
 
-
+## Portfolio
+    - portfolio id
+    - funds
+    - shareholding
