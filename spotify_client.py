@@ -6,11 +6,11 @@ import pandas as pd
 from spotipy import SpotifyClientCredentials,oauth2,Spotify
 
 
-# credentials
+# authenticating my credentials
 cid = "702f99bae6f5489da997f6c86663956b"
 secret_id = "08d83f6fe0a0483799fb4891477e757b"
 client_credentials_manager = SpotifyClientCredentials(client_id = cid,client_secret = secret_id)
-sp = Spotify(client_credentials_manager =client_credentials_manager)
+sp = Spotify(client_credentials_manager=client_credentials_manager)
 
 
 # setting up the dataframe
@@ -28,7 +28,7 @@ for i in range(0,30,1):
         track_id.append(tr["id"])
         popularity.append(tr["popularity"])
 
-#some info about artists
+# some info about the artists
 for i in range(0,30,1):
     artist_results = sp.search(q = "artist:The Weeknd", type = "artist", limit = 30)
     for j,tr in enumerate(artist_results["artist"]["items"]):
