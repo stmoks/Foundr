@@ -12,21 +12,29 @@ of Foundr.
 ## Artist
     - id
     - name
+    - location
     - prospectus (summary or intro video)
     - country
     - genre
     - year
     - instruments
     - followers
+    - following
+    - playlist
     - investors
-    - social media accounts
+    - social media accounts / websites
     - cover picture
     - total creation time
     - total earnings
+    - share price
+    - email
+    - password
+    - sponsors
 
 ## Album
     - artist id
     - song id
+    - description
     - cover picture
 
 ## Associated acts
@@ -34,6 +42,7 @@ of Foundr.
 
 ## Song
     - song id
+    - description
     - artist id
     - date added
     - duration
@@ -53,5 +62,9 @@ of Foundr.
     - year started
     - followers
     - investors
+
+## General media container
+    - artist id
+    - media item
 
 

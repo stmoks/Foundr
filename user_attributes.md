@@ -4,6 +4,10 @@ Anyone that uses Foundr would be considered a user whether they invest or not. T
 
 ## User profile
     - user id
+    - email
+    - password
+    - credential id
+    - playlist/bookmark
     - name
     - surname
     - country
