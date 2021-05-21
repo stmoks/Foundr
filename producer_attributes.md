@@ -2,12 +2,26 @@
 
 # Producer
     - artist id
-    - artist contribution lsit
+    - artist contribution list
     - song list
     - portfolio id
+    - date joined
+    - message id
+    - feed (advertisement board)
+    - subscriptions (groups around an idea/genre)
 
 # Samples
     - artist id
     - media 
     - media item id
+
+## Message 
+    - artist id
+    - message id
+    - message
+
+## Subscriptions
+    - subscription id
+    - content
+    - artist ids
     

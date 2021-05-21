@@ -6,4 +6,7 @@
     - Deals
     - High
     - Low
+    - Graph
+    - Music sample
+    - currency
     

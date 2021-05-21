@@ -18,26 +18,31 @@ artist_name = []
 track_name = []
 popularity = []
 track_id = []
-country = []
 
-for i in range(0,30,1):
+
+for i in range(0,20,1):
     track_results = sp.search(q = "year:2020-2021", type = "track", limit = 30)
+
     for j,tr in enumerate(track_results["tracks"]["items"]):
         artist_name.append(tr["artists"][0]["name"])
         track_name.append(tr["name"])
         track_id.append(tr["id"])
         popularity.append(tr["popularity"])
+    
 
-# some info about the artists
-for i in range(0,30,1):
-    artist_results = sp.search(q = "artist:The Weeknd", type = "artist", limit = 30)
-    for j,tr in enumerate(artist_results["artist"]["items"]):
-        artist_name.append(tr["artists"][0]["name"])
-        country.append(tr["country"])
+#some info about the artists
+# for i in range(0,15,1):
+#     artist_results = sp.search(q = "artist:The Weeknd", type = "artist", limit = 30)
+
+#     for j,art in enumerate(artist_results["artists"]["items"]):
+#         artist_name.append(art["name"])
+#         popularity.append(art["popularity"])
+#         track_name.append("")
+#         track_id.append("")
 
 
 track_dataframe = pd.DataFrame({"artist_name":artist_name,"track_name":track_name,
-"track_id":track_id,"popularity":popularity},{"country":country})
+"track_id":track_id,"popularity":popularity})
 
 # the most popular tracks
 new_df = track_dataframe.sort_values("popularity",ascending=False)

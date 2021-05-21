@@ -5,6 +5,11 @@
     - artist contribution list
     - song list
     - portfolio id
+    - date joined
+    - subscriptions (groups around an idea/genre)
+    - feed (advertisement board)
+    - comments
+    - message id
 
 ## Portfoliio
     - portfolio id
@@ -12,4 +17,15 @@
 ## Song (raw form)
     - song id
     - text
+
+## Message 
+    - artist id
+    - message id
+    - message
+
+## Subscriptions
+    - subscription id
+    - content
+    - artist ids
+
 

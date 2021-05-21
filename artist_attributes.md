@@ -10,54 +10,84 @@ of Foundr.
 
 
 ## Artist
-    - id
+    - artist id
+    - post id
+    - text id
+    - type
+    - uri
+    - languages
+    - url
+    - feed id
+    - licence id
+    - portfolio id
+    - message id
+    - mentions
+    - awards
     - name
     - gender
     - DOB
     - location
     - prospectus (summary or intro video)
     - country
-    - genre
-    - year
+    - genres
+    - date joined
     - instruments
     - followers
     - following
     - playlist/bookmark
     - investors
     - social media accounts / websites
-    - cover picture
+    - images
     - total creation time
-    - total earnings
     - share price
     - email
     - password
     - sponsors/endorsements
-    - portfolio id
+    
 
 ## Album
+    - album id
+    - artist ids
+    - uri
+    - url
+    - languages
+    - https
+    - type
     - artist id
     - song id
     - description
     - cover picture
+    - release date
+    - ranking/popularity
 
 ## Associated acts
     - artist id
 
 ## Song
     - song id
+    - isrc
+    - artist ids
+    - uri
+    - album
+    - url
+    - https
+    - type
+    - languages
+    - track number
+    - licence id
     - description
     - artist id
-    - date added
+    - release date
     - duration
     - bpm
-    - cover
+    - subscriptions (groups around an idea/genre)
+    - cover image
     - title
     - writer
     - lyrics
-    - track
-    - track id 
+    - track 
     - play/listen count
-    - rating
+    - rating/ranking/popularity
     - comments
 
 ## Market indicators
@@ -82,4 +112,24 @@ of Foundr.
 ## Portfolio
     - portfolio id
     - funds
+    - total earnings
     - shareholding
+    - currency
+
+## Feed
+    - artist id
+    - item
+    - comments
+    - likes
+
+## Messages
+    - artist id
+    - message id
+    - messages
+    - user id
+    - media link
+
+## Subscriptions
+    - subscription id
+    - content
+    - artist ids
