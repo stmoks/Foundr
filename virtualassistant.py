@@ -2,7 +2,7 @@
 # code copied from https://www.youtube.com/watch?v=AGatX_8gaeM
 
 # PyAudio is a requirement for using the speech recognition module. The instructions are presented on
-# the PyPi page for SpeechRecognition. I've also added the installation file in the requirements file.
+# the PyPi page for SpeechRecognition. I've also added the installation path in the requirements txt.
 
 import speech_recognition as sr, os, datetime, warnings, random, calendar,wikipedia
 import pyttsx3
@@ -49,32 +49,9 @@ text = RecordAudio()
 convertor = pyttsx3.init()
 convertor.setProperty('rate',150)
 convertor.setProperty('volume',0.7)
-voices = convertor.getProperty('voices')
-for x in voices:
-    print(x)
-voice_id = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0"
-convertor.setProperty('voice',voice_id)
 convertor.say(text)
 
 convertor.runAndWait()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # A function for wake words
