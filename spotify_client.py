@@ -16,7 +16,6 @@ username = "j389o9xb4nnxfn1fvoftubvst"
 scope = 'user-read-private user-read-playback-state user-modify-playback-state'
 
 client_credentials_manager = SpotifyClientCredentials(client_id = cid,client_secret = secret_id)
-sp = Spotify(client_credentials_manager=client_credentials_manager)
 
 
 ## playing music using my virtual assistant
@@ -26,7 +25,9 @@ except (AttributeError):
     os.remove(f".cache-{username}")
     token = util.prompt_for_user_token(username, scope,cid,secret_id,redirect_url)
 
-spotify_object = spotipy.Spotify(auth=token)
+sp = Spotify(client_credentials_manager=client_credentials_manager,auth=token)
+print(sp.devices)
+
 
 # setting up the dataframe
 artist_name = []
@@ -78,19 +79,21 @@ searchResults = sp.search(artist_search,1,0,"artist")
 artist = searchResults['artists']['items'][0]
 print(artist['name'])
 
-webbrowser.open(artist['images'][0]['url'])
+# webbrowser.open(artist['images'][0]['url'])
 artistID = artist['id']
 
 # Extract data from album
 album_results = sp.artist_albums(artistID)
 album_results = album_results['items']
 
+
  # Album details
 trackURIs = []
 trackArt = []
 i = 0
 
-devices = spotify_object.devices()
+devices = sp.devices()
+print(devices)
 deviceID = devices['devices'][0]['id']
 
 for item in album_results:
@@ -114,7 +117,7 @@ while True:
     trackSelectionList = []
     trackSelectionList.append(trackURIs[int(181)])
     sp.start_playback(deviceID, None, trackSelectionList)
-    webbrowser.open(trackArt[int(181ff)])
+    webbrowser.open(trackArt[0])
 
 
 

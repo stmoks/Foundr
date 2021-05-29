@@ -2,11 +2,13 @@
     <head>
         <meta charset="utf-8">
         <title>Foundr</title>
+        <link rel="stylesheet" href="artist_styling.css">
     </head>
     <body>
         <!--Below are the html elements found on the artists page of Foundr.-->
+        <center>
         <h2>Welcome to Foundr</h2>
-        <h3>A place for artists to find their voice</h3>
+        <h3>A place for true stars to shine</h3>
         <p>On this page, we want you to <strong>tell</strong> us more about <em>yourself</em>. You are about to be part of
             something incredible.
         </p>
@@ -19,12 +21,36 @@
 
         <div class="Info">
         <p>Some of the things you'll be able to use <span class="Foundr">Foundr</span> inlcude:</p>
-        <ul>
-            <li>Releasing new music</li>
+        <ul >
+            <li >Releasing new music</li>
             <li>Finding collaborators</li>
             <li>Obtaining funding for your career</li>
         </ul>
         </div>
+
+        <form action="">
+        <h3>Are you an artist?</h3>
+        <label for="yes">Yes</label>
+        <input id = "yes" type="radio" name="artist_check" value="Yes" >
+        <label for="no">No</label>
+        <input id = "no" type="radio" name="artist_check" value="No"><br><br>
+
+        <label for="dropdown">Experience</label>
+        <select name="experience" id="dropdown">
+            <option value="0-1">0-1 years</option>
+            <option value="1-2">1-2 years</option>
+            <option value="2-3">2-3 years</option>
+            <option value="3+">3+ years</option>
+        </select> <br><br>
+
+        <hr size="1" noshade width="50%">
+        
+        <h2>Any other thoughts?</h2>
+        <textarea name="mytext" id="" cols="80" rows="6"></textarea>
+        </form>
+
+        </center>
+        
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor eius inventore consectetur fugit magnam porro pariatur, saepe sint laudantium provident? Itaque, deleniti asperiores minus quod placeat laborum fugit amet doloribus.</p>
         <a href="https://www.theweeknd.com/" target="_blank">
