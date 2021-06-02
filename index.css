@@ -1,41 +1,41 @@
-#first_pg_login{
-    margin-top: 70px;
+#first_pg_login {
+  margin-top: 70px;
 }
 
-.navbar-brand{
-    width: 40%;
-    
+.navbar-brand {
+  width: 40%;
 }
 
-.navbar-nav{
-    width: 70%;
+.navbar-nav {
+  width: 70%;
 }
 
-.navbar{
-    height: 7.5%;
+.navbar {
+  height: 7.5%;
 }
 
-#first_hd_index{
-    margin-top: 70px;
-    text-align: center;
+#first_hd_index {
+  margin-top: 70px;
+  text-align: center;
 }
 
-.row{
-    width: 100%;
+.row {
+  width: 100%;
 }
 
-.jumbotron{
-    padding:2rem 1rem;
-    margin-bottom:2rem;
-    border-radius:.3rem;
-    background-color: #e9ecef;
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  background-color: #e9ecef;
 }
 
-.img{
-    box-sizing: 10px 10px;
+.img {
+  box-sizing: 10px 10px;
 }
 
-#cover_art{
-    margin-top: 3em;
-    margin-bottom: 3em;
+#cover_art {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
+
