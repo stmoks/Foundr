@@ -1,60 +1,182 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Foundr</title>
-        <link rel="stylesheet" href="artist_styling.css">
-    </head>
-    <body>
-        <!--Below are the html elements found on the artists page of Foundr.-->
-        <center>
-        <h2>Welcome to Foundr</h2>
-        <h3>A place for true stars to shine</h3>
-        <p>On this page, we want you to <strong>tell</strong> us more about <em>yourself</em>. You are about to be part of
-            something incredible.
-        </p>
-        
-        <a href="home_page.html">Home page</a>
-        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-        <a href="https://twitter.com/?lang=en" target="_blank">Twitter</a>
-    
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="Info">
-        <p>Some of the things you'll be able to use <span class="Foundr">Foundr</span> inlcude:</p>
-        <ul >
-            <li >Releasing new music</li>
-            <li>Finding collaborators</li>
-            <li>Obtaining funding for your career</li>
-        </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundr</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="artist_page.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg col-md col-sm col-xs">
+                    <a href="index.html" class="navbar-brand"><img src="images/logo.png" id="logo"> Foundr</a>
+                </div>
+
+                <div class="col-lg col-md col-sm col-xs">
+                    <div class="collapse navbar-collapse">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="artist_page.html">You</a>
+                            <a class="nav-link" href="collaborator_page.html">Collaborators</a>
+                            <a class="nav-link" href="fan_page.html">Fans</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg col-md col-sm col-xs">
+                    <form class="d-flex">
+                        <div class="collapse navbar-collapse">
+                            <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">
+                                Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
+    </nav>
 
-        <form action="">
-        <h3>Are you an artist?</h3>
-        <label for="yes">Yes</label>
-        <input id = "yes" type="radio" name="artist_check" value="Yes" >
-        <label for="no">No</label>
-        <input id = "no" type="radio" name="artist_check" value="No"><br><br>
 
-        <label for="dropdown">Experience</label>
-        <select name="experience" id="dropdown">
-            <option value="0-1">0-1 years</option>
-            <option value="1-2">1-2 years</option>
-            <option value="2-3">2-3 years</option>
-            <option value="3+">3+ years</option>
-        </select> <br><br>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor eius inventore consectetur fugit magnam porro
+        pariatur, saepe sint laudantium provident? Itaque, deleniti asperiores minus quod placeat laborum fugit amet
+        doloribus.</p>
+    <a href="https://www.theweeknd.com/" target="_blank">
+        <img src="images/the_weeknd.jpg" alt="https://www.theweeknd.com/">
+    </a>
 
-        <hr size="1" noshade width="50%">
-        
-        <h2>Any other thoughts?</h2>
-        <textarea name="mytext" id="" cols="80" rows="6"></textarea>
-        </form>
+    <div class="container">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur
+            ipsum rerum laudantium sint quidem. Consequuntur doloremque, rem
+            repellat, voluptates nobis ipsum praesentium et recusandae quasi
+            perferendis qui ad quibusdam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo
+            adipisci quos suscipit tenetur dolorum asperiores quaerat. Quos beatae
+            unde, impedit repellat minus quidem temporibus nemo quam magnam
+            similique quasi!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+            autem excepturi deserunt expedita consectetur iste molestias placeat
+            voluptatibus quibusdam sint? Ipsam magni voluptatibus nam pariatur
+            doloremque dicta saepe numquam corrupti.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+    </div>
 
-        </center>
-        
+    <div class="container">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur
+            ipsum rerum laudantium sint quidem. Consequuntur doloremque, rem
+            repellat, voluptates nobis ipsum praesentium et recusandae quasi
+            perferendis qui ad quibusdam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo
+            adipisci quos suscipit tenetur dolorum asperiores quaerat. Quos beatae
+            unde, impedit repellat minus quidem temporibus nemo quam magnam
+            similique quasi!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+            autem excepturi deserunt expedita consectetur iste molestias placeat
+            voluptatibus quibusdam sint? Ipsam magni voluptatibus nam pariatur
+            doloremque dicta saepe numquam corrupti.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae
+            tempore dignissimos eligendi repellat nam quasi similique accusantium
+            accusamus, sed nulla, tempora dolorem placeat consequuntur debitis
+            quibusdam voluptate excepturi maiores.
+        </p>
+    </div>
+</body>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor eius inventore consectetur fugit magnam porro pariatur, saepe sint laudantium provident? Itaque, deleniti asperiores minus quod placeat laborum fugit amet doloribus.</p>
-        <a href="https://www.theweeknd.com/" target="_blank">
-        <img src="the weeknd.jpg"  alt="https://www.theweeknd.com/">
-        </a>
-    </body>
 </html>

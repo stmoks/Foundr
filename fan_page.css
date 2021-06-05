@@ -1,0 +1,25 @@
+.row {
+  width: 100%;
+}
+
+.navbar-brand {
+  width: 40%;
+}
+
+.navbar-nav {
+  width: 70%;
+}
+
+.navbar {
+  height: 7.5%;
+}
+
+#logo {
+  width: 23.5px;
+  position: relative;
+  bottom: 1.4px;
+}
+
+.navbar-nav {
+  font-size: 1.15em;
+}

@@ -1,7 +1,4 @@
-#first_pg_login {
-  margin-top: 70px;
-}
-
+/* navbar stylings */
 .navbar-brand {
   width: 40%;
 }
@@ -14,20 +11,41 @@
   height: 7.5%;
 }
 
-#first_hd_index {
-  margin-top: 70px;
-  text-align: center;
-}
-
 .row {
   width: 100%;
 }
 
+#logo {
+  width: 23.5px;
+  position: relative;
+  bottom: 1.4px;
+}
+
+.navbar-nav {
+  font-size: 1.15em;
+}
+
+/* body stylings */
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   border-radius: 0.3rem;
   background-color: #e9ecef;
+}
+
+
+#first_hd_index {
+  margin-top: 70px;
+  text-align: center;
+}
+
+#intro_paragraph {
+  text-align: center;
+}
+
+
+h2 {
+  text-align: center;
 }
 
 .img {
@@ -39,10 +57,10 @@
   margin-bottom: 3em;
 }
 
-.centred-header{
+.centred-header {
   margin: 0 auto 0 auto
 }
 
-table{
+table {
   margin: 0 auto 0 auto
 }

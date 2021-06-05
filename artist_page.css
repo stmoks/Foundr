@@ -1,0 +1,34 @@
+/*This style sheet describes the stylings for the artist_page.html page*/
+h2 {
+    color: #808080;
+
+}
+
+.navbar-brand {
+    width: 40%;
+}
+
+.navbar {
+    height: 7.5%;
+}
+
+.row {
+    width: 100%;
+}
+
+#logo {
+    width: 23.5px;
+    position: relative;
+    bottom: 1.4px;
+}
+
+.navbar-nav {
+    font-size: 1.15em;
+}
+
+p {
+    padding: 4rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    background-color: #e9ecef;
+}
