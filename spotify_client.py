@@ -2,8 +2,10 @@
 # Completed with the help of Max Tingle @ Medium, 
 # https://medium.com/@maxtingle/getting-started-with-spotifys-api-spotipy-197c3dc6353b
 
+
+# Need to be connected to Spotify
 import pandas as pd
-from spotipy import SpotifyClientCredentials,oauth2,Spotify,util
+from spotipy import SpotifyClientCredentials,Spotify,util
 import sys,os,webbrowser
 
 import spotipy
@@ -26,7 +28,6 @@ except (AttributeError):
     token = util.prompt_for_user_token(username, scope,cid,secret_id,redirect_url)
 
 sp = Spotify(client_credentials_manager=client_credentials_manager,auth=token)
-print(sp.devices)
 
 
 # setting up the dataframe
@@ -72,7 +73,7 @@ track_dataframe = pd.DataFrame({"artist_name":artist_name,"track_name":track_nam
 # the most popular tracks
 new_df = track_dataframe.sort_values("popularity",ascending=False)
 new_df = new_df.drop_duplicates("track_id")
-print(new_df.head(20))
+# print(new_df.head(20))
 
 # Print artist details
 searchResults = sp.search(artist_search,1,0,"artist")
@@ -84,7 +85,7 @@ artistID = artist['id']
 
 # Extract data from album
 album_results = sp.artist_albums(artistID)
-album_results = album_results['items']
+album_results = album_results['items'][0:2]
 
 
  # Album details
@@ -93,7 +94,6 @@ trackArt = []
 i = 0
 
 devices = sp.devices()
-print(devices)
 deviceID = devices['devices'][0]['id']
 
 for item in album_results:
@@ -113,12 +113,11 @@ for item in album_results:
     print()
 
 # See album art
-while True:
-    trackSelectionList = []
-    trackSelectionList.append(trackURIs[int(181)])
-    sp.start_playback(deviceID, None, trackSelectionList)
-    webbrowser.open(trackArt[0])
+# webbrowser.open(trackArt[0])
 
+trackSelectionList = []
+trackSelectionList.append(trackURIs[int(12)])
+sp.start_playback(deviceID, None, trackSelectionList)
 
 
 
