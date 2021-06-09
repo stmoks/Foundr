@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     artist_images.hover(function () {
         artist_images.eq(1).attr("src", "images/nicki_minaj.jpg")
-        artist_images.attr("class", "img-thumbnail")
+        artist_images.eq(1).attr("class", "img-thumbnail")
     })
 
 
