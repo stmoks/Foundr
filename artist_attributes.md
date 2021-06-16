@@ -25,6 +25,7 @@ of Foundr.
     - awards
     - name
     - gender
+    - inspired by
     - DOB
     - location
     - prospectus (summary or intro video)
