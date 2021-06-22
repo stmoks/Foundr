@@ -13,6 +13,7 @@
 
 .row {
   width: 100%;
+  display: inline-block;
 }
 
 #logo {
@@ -33,7 +34,6 @@
   background-color: #e9ecef;
 }
 
-
 #first_hd_index {
   margin-top: 70px;
   text-align: center;
@@ -42,7 +42,6 @@
 #intro_paragraph {
   text-align: center;
 }
-
 
 h2 {
   text-align: center;
@@ -58,9 +57,28 @@ h2 {
 }
 
 .centred-header {
-  margin: 0 auto 0 auto
+  margin: 0 auto 0 auto;
 }
 
 table {
-  margin: 0 auto 0 auto
+  margin: 0 auto 0 auto;
+}
+
+.col-lg-4.col-med-4.col-sm-4.col-xs-4 {
+  display: inline-block;
+  margin-bottom: 1em;
+  margin-right: 1.5em;
+}
+
+textarea {
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  width: 50%;
+}
+
+.feed-paragraph {
+  display: inline-block;
 }
